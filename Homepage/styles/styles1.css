@@ -1,0 +1,303 @@
+header{
+	margin: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	display: block;
+}
+
+
+body{
+	background: #8D8A8B;
+	color: #0B1430;
+	font: 16px/24px "PT Serif", Constantina, Palatino, "Palatino Linotype", Georgia, serif;	
+}
+
+div{
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-size: 36px;
+	line-height: 10px;
+	text-transform: uppercase;
+	color: #640F16;
+	font-family: "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	display: block;
+}
+
+a{
+	color: #640F16;
+	text-decoration: none;
+	-webkit-transition: all .15s linear;
+	transition: all .15s linear;
+}
+
+article, aside, footer, header, hgroup, main, nav, section{
+	display: block;
+}
+
+ul, menu, dir {
+	display: block;
+	-webkit-margin-before: 1em;
+	   -moz-margin-after: 1em;
+         -o-margin-start: 0px;
+            margin-end: 0px;
+	-webkit-padding-start:40px;		
+}
+
+li{
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+
+
+.group{
+	clear: both;
+}
+
+.group:before, .group:after{
+	content: "";
+	display: table;
+}
+
+.group:after{
+	clear: both;
+}
+
+.primary-header{
+	background: #555353;
+	color: #143258;
+	margin-bottom: 48px;
+	padding: 23px 0;
+}
+
+
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+
+.primary-logo{
+	float: left;
+	line-height: 1;
+	margin-left: 10px;
+	text-shadow: 0 1px 1px rgba(0,0,0, .15);
+}
+
+.primary-logo a{
+	color: #640F16;
+
+}
+
+.primary-logo span{
+	color: #0B1430;
+	font-size: 18px;
+	text-shadow: none;
+	text-transform: none;
+}
+
+h4 .h-standfirst{
+	font-size: 12px;
+}
+
+.primary-nav{
+	float: right;
+	margin-top: 21px;
+}
+
+.primary-nav a:hover, .nav-active a{
+	color: #fff;
+}
+
+.list-compact{
+	list-style: none;
+}
+
+.primary-nav li{
+	float: left;
+	margin: 0 10px;
+}
+
+.nav-active a{
+	cursor: default;
+	color: #640F16; 
+}
+
+.primary-nav a{
+	font: 700 18px/24px "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #0B1430; 
+}
+
+
+/*welcome*/
+
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+
+}
+
+.divider{
+	border-bottom: 2px solid #0B1430;
+	margin-bottom: 47px;
+	padding-bottom: 23px;
+}
+
+.gutters{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.avatar-pulled{
+	float:right;
+	margin-left: 20px;
+	width: 144px;
+}
+
+.avatar-intrests{
+	float:right;
+	margin-left: 20px;
+	width: 250px;
+}
+
+.avitar{
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	display: block;
+	margin-bottom: 24px;
+}
+
+.text-intro{
+	font-size: 24px;
+	line-height: 36px;
+}
+
+p{
+	margin-bottom: 24px;
+	display: block;
+	-webkit-margin-before: 1em;
+	   -moz-margin-after:  1em;
+         -o-margin-start:  0px;
+    -webkit-margin-end:    0px;
+}
+
+.col-1, .col-2, .col-3{
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px; 
+}
+
+
+.col-2{
+	width: 460px;
+}
+
+.baseline-bottom{
+	margin-bottom: 16px;
+	font-size: 21px;
+}
+
+.link-feat{
+	font: 700 15px/26px "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+/*buttons*/
+
+.margin-bottom{
+	margin-bottom: 20px;
+}
+
+.col-baselines{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.col-gutters{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.box-offset{
+	background: #fff;
+	border: 1px solid #d4d4d4;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+section{
+	display: block;
+}
+
+h3{
+	color: #404853;
+	margin: 0 0 20px 0;
+	font-size: 24px;
+	display: block;
+	-webkit-margin-before: .83em;
+	-webkit-margin-after: .83em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+}
+
+
+/*Journal styling*/
+
+h5{
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.complex-experiment{
+	text-indent: 2em;
+}
+
+.complex-experiment ~ p{
+	text-indent: none;
+}
+
+/*Sibling selectors*/
+
+input{
+	display: none;
+}
+
+label{
+	background: #f5f5f5;
+	background: linear-gradient(#fff, #eee);
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	cursor: pointer;
+	padding: 8px;
+}
+
+label:hover{
+	color: #f7941d;
+}
+
+input:checked + label{
+	background: #f5f5f5;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+	color: #8c9198;
+}
+
+input:hover + :checked + label{
+	color: #f7941d;
+}
+
+nav{
+	max-height: 0;
+	overflow: hidden;
+	transition: all .2s linear;
+}
+
+input:checked ~ nav{
+	max-height: 500px;
+}
+
