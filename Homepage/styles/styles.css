@@ -110,12 +110,9 @@ h4 .h-standfirst{
 	margin-top: 21px;
 }
 
-
 .primary-nav a:hover, .nav-active a{
 	color: #fff;
-
 }
-
 
 .list-compact{
 	list-style: none;
@@ -319,17 +316,31 @@ h3{
 /*message warnings*/
 
 .chat-nav{
+	background: #e4efee;
+	border-radius: 65px/55px;
+	width: 450px;
+	height: 125px;
 
 }
 
 .mssg-box{
+	position: absolute;
+	margin: 10px;
 	border-radius: 50%;
 	width: 100px;
 	height: 100px;
 	background-color: #EC6C3B;
+	background-image:url('assets/img/mssg2.png');
+	background-repeat:no-repeat;
+}
+
+.mssg-alert{
+	width: 39px;
+	height: 39px;
 }
 
 .mssg-count{
+	position: absolute;
 	border-radius: 50%;
 	width: 25px;
 	height: 25px;
@@ -337,25 +348,205 @@ h3{
 	color: #fff;
 	vertical-align: center;
 	text-align: center;
-	margin-top: 35px;
 	margin-left: 70px;
 	font: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "lucida grande" sans-serif;
 }
 
 .mssg-master{
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 150px;
+
+	/*float: right;*/
+}
+
+.chat-mssg{
+	padding-bottom: 50px;
+	text-decoration: bold;
+}
+
+.chat-timestamp{
+	position: absolute;
+	width: 150px;
 
 }
 
 
+/*tool tip*/
+
+ul{
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+	
+}
+
+ul,li{
+	list-style: none;
+}
+
+a{
+	color: #333;
+	text-decoration: none;
+}
+
+.list-container{
+	text-align: center;
+}
+
+.tt-wrapper{
+	padding: 0;
+	width: 435px;
+	height: 70px;
+	margin: 80px auto 30px auto;
+	list-style: none;
+	display: inline;
+}
 
 
+.tt-wrapper li a{
+    display: block;
+    width: 68px;
+    height: 70px;
+    margin: 0 2px;
+    outline: none;
+    background: transparent 
+    url(../assets/img/images.png) no-repeat top left;
+    position: relative;
+
+}
 
 
+.tt-wrapper li .tt-gplus{
+    background-position: 0px 0px;
+}
+.tt-wrapper li .tt-twitter{
+    background-position: -68px 0px;
+}
+.tt-wrapper li .tt-dribbble{
+    background-position: -136px 0px;
+}
+.tt-wrapper li .tt-facebook{
+    background-position: -204px 0px;
+}
+.tt-wrapper li .tt-linkedin{
+    background-position: -272px 0px;
+}
+.tt-wrapper li .tt-forrst{
+    background-position: -204px 0px;
+}
 
 
+.tt-wrapper li a span{
+    width: 100px;
+    height: auto;
+    line-height: 20px;
+    padding: 10px;
+    left: 50%;
+    margin-left: -64px;
+    font-family: 'Alegreya SC', Georgia, serif;
+    font-weight: 400;   
+    font-style: italic;
+    font-size: 14px;
+    color: #719DAB;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 4px solid #fff;
+    background: rgba(255,255,255,0.3);
+    text-indent: 0px;
+    border-radius: 5px;
+    position: absolute;
+    pointer-events: none;
+    bottom: 100px;
+    opacity: 0;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all .03s ease-in-out;
+}
 
 
+.tt-wrapper li a span:before,
+.tt-wrapper li a span:after{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -9px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(0,0,0,0.1);
+}
 
+.tt-wrapper li a span:after{
+    bottom: -14px;
+    margin-left: -10px;
+    border-top: 10px solid #fff;
+}
+
+
+.tt-wrapper li a:hover span{
+    opacity: 0.9;
+    bottom: 70px;
+}
+
+/*Journal styling*/
+
+h5{
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.complex-experiment{
+	text-indent: 2em;
+}
+
+.complex-experiment ~ p{
+	text-indent: none;
+}
+
+/*Sibling selectors*/
+
+input{
+	display: none;
+}
+
+label{
+	background: #f5f5f5;
+	background: linear-gradient(#fff, #eee);
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	cursor: pointer;
+	padding: 8px;
+}
+
+label:hover{
+	color: #f7941d;
+}
+
+input:checked + label{
+	background: #f5f5f5;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+	color: #8c9198;
+}
+
+input:hover + :checked + label{
+	color: #f7941d;
+}
+
+nav{
+	max-height: 0;
+	overflow: hidden;
+	transition: all .2s linear;
+}
+
+input:checked ~ nav{
+	max-height: 500px;
+}
 
 
 
