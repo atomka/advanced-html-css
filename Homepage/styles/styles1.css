@@ -264,7 +264,7 @@ h5{
 
 /*Sibling selectors*/
 
-input{
+/*input{
 	display: none;
 }
 
@@ -299,5 +299,5 @@ nav{
 
 input:checked ~ nav{
 	max-height: 500px;
-}
+}*/
 

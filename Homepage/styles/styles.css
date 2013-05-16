@@ -494,5 +494,11 @@ a{
     bottom: 70px;
 }
 
+/*map test*/
 
+.ui-tabs .ui-tabs-hide {
+    position: absolute !important;
+    left: -10000px !important;
+    display:block !important;
+}
 
